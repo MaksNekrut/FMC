@@ -1,0 +1,25 @@
+@import "../abstract/_variables";
+@import "../parts/_advantages";
+@import "../parts/_footer";
+@import "../parts/_header";
+@import "../parts/_opportunities";
+@import "../parts/_solutions";
+@import "../parts/_start";
+@import "../parts/_variants";
+
+
+html {
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
