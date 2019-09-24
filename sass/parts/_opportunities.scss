@@ -1,0 +1,71 @@
+.opportunities {
+    background-color: $color-white;
+    &__container {
+        width: 1150px;
+        height: 800px;
+        margin: 0 auto;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 240px);
+    }
+    &__items_top1 {
+        position: relative;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    &__items_top2 {
+        position: relative;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    &__items_top3 {
+        position: relative;
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+    &__title {
+        position: relative;
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+        font-size: 3rem;
+        & > * {
+            position: absolute;
+        }
+        & > :first-child {
+            top: 50px;
+            left: 480px;
+        }
+        & > :nth-child(2) {
+            top: 80px;
+            left: 480px;
+        }
+        & > :last-child {
+            top: 170px;
+            left: 480px;
+        }
+    }
+    &__items_bottom1 {
+        position: relative;
+        grid-column: 1 / 4;
+        grid-row: 3 / 4;
+    }
+    &__items_bottom2 {
+        position: relative;
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+    &__items_bottom3 {
+        position: relative;
+        grid-column: 3 / 4;
+        grid-row: 3 / 4;
+    }
+}
+p {
+    position: absolute;
+    top: 160px;
+    left: 110px;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+}
