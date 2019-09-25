@@ -1,0 +1,46 @@
+.footer {
+    background-color: #4682B4;
+    &__container {
+        width: 1150px;
+        height: 500px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 2rem;
+        .footer__company {
+            display: flex;
+            flex-direction: column;
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+        .footer__modules {
+            display: flex;
+            flex-direction: column;
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
+        .footer__industries {
+            display: flex;
+            flex-direction: column;
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+        }
+        .footer__industries {
+            display: flex;
+            flex-direction: column;
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+        }
+        .footer__about {
+            display: flex;
+            flex-direction: column;
+            grid-column: 4 / 5;
+            grid-row: 1 / 2;
+        }
+        .footer_bottom {
+            grid-column: 1 / 5;
+            grid-row: 2 / 3;
+        }
+    }
+}

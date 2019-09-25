@@ -1,0 +1,57 @@
+.solutions {
+    position: relative;
+    background: url("../../img/solbg.png");
+    &__overlay {
+        position: absolute;
+        width: 100%;
+        height: 800px;
+        top: 0;
+        left: 0;
+        background: rgba(25,0,0,.4);
+    }
+    &__container {
+        width: 1150px;
+        height: 800px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        width: 600px;
+        height: 35px;
+        text-align: center;
+        margin: 3rem auto;
+    }
+    &__menu {
+        color: $color-white;
+        ul {
+            width: 800px;
+            margin: 0 auto;
+            padding: 0;
+            border: 1px solid grey;
+            text-decoration: none;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+    &__content {
+        margin: 2rem auto;
+        display: flex;
+        justify-content: space-around;
+        .slider__arrow_left {
+            margin-right: auto;
+        }
+        .slider__laptop {
+            position: absolute;
+            left: 480px;
+            top: 200px;
+        }
+        .slider__laptopimg {
+            position: absolute;
+            left: 606px;
+            top: 237px;
+        }
+
+    }
+}

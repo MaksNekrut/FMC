@@ -1,0 +1,27 @@
+.variants {
+    color: $color-white;
+    &__container {
+        width: 100%;
+        height: 380px;
+        margin: 3rem auto;
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1, 380px;
+    }
+    &__title {
+        position: absolute;
+        left: 500px;
+        top: 80px;
+    }
+    &_left {
+        background: url("../../img/var1.png");
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    &_right {
+        background: url("../../img/var2.png");
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+}

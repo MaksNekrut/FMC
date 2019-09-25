@@ -1,0 +1,62 @@
+.advantages {
+    color: black;
+    &__title {
+        width: 100%;
+        height: 80px;
+        margin: 1rem auto;
+        text-align: center;
+    }
+    &__container {
+        width: 1150px;
+        height: 1100px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 355px);
+        .item1 {
+            background: url("../../img/advbg1.png");
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+        .item2 {
+            background: url("../../img/advbg2.png");
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
+        .item3 {
+            background: url("../../img/advbg3.png");
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+        .item4 {
+            background: url("../../img/advbg4.png");
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+        .item5 {
+            background: url("../../img/advbg5.png");
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+        }
+        .item6 {
+            background: url("../../img/advbg6.png");
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+        }
+    }
+    &__items {
+        width: 570px;
+        height: 355px;
+        .overlay {
+            background: rgba(0,0,0, .4);
+            width: 100%;
+            height: 177px;
+            margin-top: 75px;
+        }
+        .advantages__overlay {
+            color: $color-white;
+            text-align: center;
+        }
+    }
+    
+}
