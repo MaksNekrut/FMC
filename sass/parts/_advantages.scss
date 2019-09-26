@@ -3,8 +3,12 @@
     &__title {
         width: 100%;
         height: 80px;
-        margin: 1rem auto;
+        margin: 0 auto;
+        margin-top: 4rem;
         text-align: center;
+        font-size: 2rem;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
     }
     &__container {
         width: 1150px;
@@ -15,47 +19,61 @@
         grid-template-rows: repeat(3, 355px);
         .item1 {
             background: url("../../img/advbg1.png");
+            background-size: 100% 100%;
             grid-column: 1 / 2;
             grid-row: 1 / 2;
         }
         .item2 {
             background: url("../../img/advbg2.png");
+            background-size: 100% 100%;
             grid-column: 2 / 3;
             grid-row: 1 / 2;
         }
         .item3 {
             background: url("../../img/advbg3.png");
+            background-size: 100% 100%;
             grid-column: 1 / 2;
             grid-row: 2 / 3;
         }
         .item4 {
             background: url("../../img/advbg4.png");
+            background-size: 100% 100%;
             grid-column: 2 / 3;
             grid-row: 2 / 3;
         }
         .item5 {
             background: url("../../img/advbg5.png");
+            background-size: 100% 100%;
             grid-column: 1 / 2;
             grid-row: 3 / 4;
         }
         .item6 {
             background: url("../../img/advbg6.png");
+            background-size: 100% 100%;
             grid-column: 2 / 3;
             grid-row: 3 / 4;
         }
     }
     &__items {
-        width: 570px;
+        width: 575px;
         height: 355px;
+        padding: 0;
         .overlay {
-            background: rgba(0,0,0, .4);
+            background: rgba(0,0,0, .6);
             width: 100%;
             height: 177px;
             margin-top: 75px;
+            &__text {
+                width: 200px;
+                margin-left: 15rem;
+                padding-top: 5rem;
+                font-size: 1.4rem;
+            }
         }
         .advantages__overlay {
             color: $color-white;
             text-align: center;
+    
         }
     }
     
