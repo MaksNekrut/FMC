@@ -65,7 +65,7 @@
       text-align: center; }
 
 .footer {
-  background-color: #4682B4;
+  background-color: #0082a1;
   color: white; }
   .footer__container {
     width: 1150px;
@@ -73,7 +73,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
+    grid-template-rows: auto 1px auto;
     grid-gap: 2rem; }
     .footer__container .footer__company {
       margin-top: 2rem;
@@ -93,30 +93,37 @@
       margin-top: 2rem;
       display: flex;
       flex-direction: column;
+      align-items: left;
       grid-column: 3 / 4;
       grid-row: 1 / 2; }
       .footer__container .footer__industries > * {
-        padding-left: 7rem; }
-    .footer__container .footer__industries {
-      margin-top: 2rem;
-      display: flex;
-      flex-direction: column;
-      grid-column: 3 / 4;
-      grid-row: 1 / 2; }
+        padding-left: 10rem; }
     .footer__container .footer__about {
       margin-top: 2rem;
       display: flex;
       flex-direction: column;
       grid-column: 4 / 5;
       grid-row: 1 / 2; }
+      .footer__container .footer__about > * {
+        padding-left: 7rem; }
     .footer__container .footer_bottom {
       grid-column: 1 / 5;
-      grid-row: 2 / 3;
-      margin: 0 auto; }
+      grid-row: 3 / 4;
+      margin: 4rem auto; }
+    .footer__container .hr {
+      grid-column: 1 / 5;
+      grid-row: 2 / 3; }
+      .footer__container .hr hr {
+        width: 100%;
+        height: 1px;
+        color: lightgreen; }
   .footer a {
     text-decoration: none;
     list-style-type: none;
     color: #fff; }
+    .footer a:hover {
+      cursor: pointer;
+      color: lightgreen; }
 
 .header {
   background-color: #fff; }
@@ -167,6 +174,17 @@
         list-style: none;
         color: #fff;
         font-size: 1.5rem; }
+        .header__container_center .header__menu .menu__list > li {
+          padding: 5px;
+          border: 1px solid transparent; }
+        .header__container_center .header__menu .menu__list > li:hover {
+          cursor: pointer;
+          color: lightgreen;
+          transition: all .5s;
+          border: 1px solid #fff;
+          border-radius: 8%;
+          z-index: 1000;
+          padding: 5px; }
         .header__container_center .header__menu .menu__list > li:not(:last-child) {
           margin-right: 40px; }
         .header__container_center .header__menu .menu__list > li {
@@ -185,6 +203,9 @@
         background-color: #00BFFF;
         color: #fff;
         padding: 1rem 2.5rem; }
+        .header__container_center .header__description .header__button:hover {
+          background-color: lightgreen;
+          transition: all 1s; }
     .header__container_center .header__button {
       display: inline-block; }
     .header__container_center .header__title {
@@ -290,6 +311,12 @@ p {
     top: 0;
     left: 0;
     background: rgba(51, 48, 48, 0.5); }
+    .solutions__overlay hr {
+      margin-top: 3rem;
+      z-index: 2000;
+      width: 100%;
+      height: 1px;
+      color: black; }
   .solutions__container {
     width: 1150px;
     height: 800px;
@@ -346,7 +373,7 @@ p {
   color: black; }
   .start__container {
     width: 1150px;
-    height: 800px;
+    height: 700px;
     margin: 0 auto;
     position: relative; }
   .start__container > * + * {
@@ -362,19 +389,22 @@ p {
   .start .content__text {
     position: absolute;
     font-size: 2rem;
-    top: 450px;
-    left: 430px;
+    top: 400px;
+    left: 350px;
     text-align: center;
-    width: 300px; }
+    width: 450px; }
   .start .content__btn {
     position: absolute;
     color: #fff;
-    top: 600px;
+    top: 550px;
     left: 510px;
     text-align: center;
     width: 150px;
     height: 50px;
-    background-color: #1E90FF; }
+    background-color: #1cc0dc; }
+    .start .content__btn:hover {
+      background-color: lightgreen;
+      transition: all 1s; }
 
 .variants {
   color: #fff; }
@@ -428,6 +458,8 @@ p {
       left: 0;
       background: rgba(51, 48, 48, 0.5);
       z-index: 800; }
+      .variants_left .variants__overlay hr {
+        margin-top: 4rem; }
   .variants_right {
     background: url("../../img/var2.png");
     grid-column: 2 / 3;
@@ -462,6 +494,8 @@ p {
       left: 0;
       background: rgba(51, 48, 48, 0.5);
       z-index: 800; }
+      .variants_right .variants__overlay_right hr {
+        margin-top: 4rem; }
 
 html {
   box-sizing: border-box;

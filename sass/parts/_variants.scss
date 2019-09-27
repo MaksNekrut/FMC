@@ -8,6 +8,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1, 380px;
+        
     }
     &__title {
         position: absolute;
@@ -57,6 +58,9 @@
         left: 0;
         background: rgba(51, 48, 48, 0.5);
         z-index: 800;
+        hr {
+            margin-top: 4rem;
+            }
         }
     }
     &_right {
@@ -98,6 +102,9 @@
         left: 0;
         background: rgba(51, 48, 48, 0.5);
         z-index: 800;
+        hr {
+            margin-top: 4rem;
+            }
         }
         
     }
